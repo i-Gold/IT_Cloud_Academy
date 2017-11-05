@@ -13,18 +13,18 @@ public class Lab_Work___1_5_7 {
 
         System.out.print("The perfect numbers are: ");
 
-        for (int i = 1; i <= n; i++)
-        {
-            int sum = 0;
+        for (int i = 1; i <= n; i++){
 
-            for (int j = 1; j <= i/2; j++){
+            int sumOfDivisors = 0;
 
-                if(i % j == 0)
+            for (int j = 1; j < i; j++){
+
+                if((i % j) == 0)
                 {
-                    sum += j;
+                    sumOfDivisors += j;
                 }
             }
-            if(sum == i){
+            if(sumOfDivisors == i){
 
                 System.out.print(i + " ");
             }
