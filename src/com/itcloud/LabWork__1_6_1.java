@@ -4,11 +4,19 @@ public class LabWork__1_6_1 {
 
     public static void main(String[] args) {
 
-        int[] array = new int[]{2,4,6,8,10,12,14,16,18,20,22,24,26,28,30};
+        int[] array = new int[30];
 
         for (int i = 0; i < array.length; i++){
 
-            System.out.print(array[i] + " ");
+            array[i] = (i + 1) * 2;
+        }
+
+        for (int i = 0; i < array.length; i++){
+
+            if ( i % 2 == 0 && i > 0){
+
+                System.out.print(array[i] + " ");
+            }
         }
     }
 }
