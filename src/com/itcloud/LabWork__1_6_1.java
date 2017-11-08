@@ -8,7 +8,7 @@ public class LabWork__1_6_1 {
 
         for (int i = 0; i < array.length; i++){
 
-            array[i] = (i + 1) * 2;
+            array[i] = i;
         }
 
         for (int i = 0; i < array.length; i++){
