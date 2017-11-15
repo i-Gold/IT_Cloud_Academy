@@ -4,27 +4,17 @@ import java.util.Arrays;
 public class LabWork__2_3 {
     public static void main(String[] args) {
 
-        MyWindow firstWindow = new MyWindow();
-        MyWindow secondWindow = new MyWindow(150,200);
-        MyWindow thirdWindow = new MyWindow(165.5,180,5);
+        MyWindow window = new MyWindow();
 
-        firstWindow.printFields();
-        secondWindow.printFields();
-        thirdWindow.printFields();
+        window.getArrayOfWindows();
 
-        final int COMPONENTS_OF_WINDOW = 4;
-
-        MyWindow[] window = new MyWindow[COMPONENTS_OF_WINDOW];
-
-        window[0] = new MyWindow();
-        window[1] = new MyWindow(100.5,135);
-        window[2] = new MyWindow(145,160.5,4);
-        window[3] = new MyWindow(150,170.5,4,"Grey");
-
-        for (MyWindow cell : window){
-
-            cell.printFields();
-        }
+//        MyWindow firstWindow = new MyWindow();
+//        MyWindow secondWindow = new MyWindow(150,200);
+//        MyWindow thirdWindow = new MyWindow(165.5,180,5);
+//
+//        firstWindow.printFields();
+//        secondWindow.printFields();
+//        thirdWindow.printFields();
     }
 }
 
@@ -54,6 +44,25 @@ class MyWindow {
         this.length = length;
         this.numberOfGlass = numberOfGlass;
         this.color = color;
+    }
+
+    public MyWindow[] getArrayOfWindows(){
+
+        final int COMPONENTS_OF_WINDOW = 4;
+
+        MyWindow[] window = new MyWindow[COMPONENTS_OF_WINDOW];
+
+        window[0] = new MyWindow();
+        window[1] = new MyWindow(100.5,135);
+        window[2] = new MyWindow(145,160.5,4);
+        window[3] = new MyWindow(150,170.5,4,"Grey");
+
+        for (MyWindow cell : window){
+
+            cell.printFields();
+        }
+
+        return window;
     }
 
     public void printFields() {
