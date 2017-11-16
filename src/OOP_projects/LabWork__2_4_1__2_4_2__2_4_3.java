@@ -55,11 +55,11 @@ class MyMath {
 }
 
 class Calculation {
-
+//тут передается параметр, и ставить final тут не нужно (это отдельные случаи есть для этого) и соответственно нужно писать sizeOfArray
     public static int[] createArray(final int SIZE_OF_ARRAY){
 
         int[] array = new int[SIZE_OF_ARRAY];
-
+//нужно тут использовать не константу, а из массива получать размер
         for (int i = 0; i < SIZE_OF_ARRAY; i++){
             array[i] = 5 + (int)(Math.random()*25);
         }
