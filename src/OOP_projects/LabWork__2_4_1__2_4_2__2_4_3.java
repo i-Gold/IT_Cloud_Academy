@@ -22,7 +22,7 @@ public class LabWork__2_4_1__2_4_2__2_4_3 {
 
 class MyMath {
 
-    final static double PI = 3.141592653589793238462643;
+    private final static double PI = 3.141592653589793238462643;
 
     public static double areaOfCircle(double radius){
 
