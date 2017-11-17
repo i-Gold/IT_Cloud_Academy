@@ -1,4 +1,4 @@
-package com.itcloud;
+package labs1;
 
 import java.util.Arrays;
 

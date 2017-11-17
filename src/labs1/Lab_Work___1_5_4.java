@@ -1,4 +1,4 @@
-package com.itcloud;
+package labs1;
 
 public class Lab_Work___1_5_4 {
 
