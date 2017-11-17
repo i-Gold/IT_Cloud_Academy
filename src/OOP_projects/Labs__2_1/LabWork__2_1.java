@@ -1,4 +1,4 @@
-package OOP_projects;
+package OOP_projects.Labs__2_1;
 
 public class LabWork__2_1 {
     public static void main(String[] args) {

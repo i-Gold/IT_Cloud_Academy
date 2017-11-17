@@ -1,29 +1,27 @@
-package OOP_projects;
+package OOP_projects.Labs__2_5;
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class LabWork__2_5_4 {
+public class LabWok__2_5_3 {
     public static void main(String[] args) {
 
-        MyInit thirdTestArray1 = new MyInit();
-        System.out.println("1:");
-        thirdTestArray1.printArray();
+        MyInit testArray1 = new MyInit();
+        testArray1.printArray();
+        System.out.println();
 
-        MyInit thirdTestArray2 = new MyInit();
-        System.out.println("2:");
-        thirdTestArray2.printArray();
+        MyInit testArray2 = new MyInit();
+        testArray2.printArray();
     }
 }
 
-class MyInit3 {
+class MyInit2 {
 
     //private final static int SIZE_OF_ARRAY = 10;
     private static int[] array = new int[10];
+    Random random = new Random();
 
-
-    static {
-        Random random = new Random();
+    {
         for (int i = 0; i < 10; i++){
             array[i] = random.nextInt(100);
         }

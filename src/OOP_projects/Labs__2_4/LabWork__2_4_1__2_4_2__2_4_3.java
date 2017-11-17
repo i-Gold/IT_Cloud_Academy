@@ -1,4 +1,4 @@
-package OOP_projects;
+package OOP_projects.Labs__2_4;
 import java.util.Arrays;
 
 public class LabWork__2_4_1__2_4_2__2_4_3 {

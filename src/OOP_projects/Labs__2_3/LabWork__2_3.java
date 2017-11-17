@@ -1,5 +1,4 @@
-package OOP_projects;
-import java.util.Arrays;
+package OOP_projects.Labs__2_3;
 
 public class LabWork__2_3 {
     public static void main(String[] args) {

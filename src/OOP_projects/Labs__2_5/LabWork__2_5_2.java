@@ -1,4 +1,4 @@
-package OOP_projects;
+package OOP_projects.Labs__2_5;
 import java.util.Arrays;
 import java.util.Random;
 

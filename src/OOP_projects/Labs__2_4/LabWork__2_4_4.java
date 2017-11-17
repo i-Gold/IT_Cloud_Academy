@@ -1,4 +1,4 @@
-package OOP_projects;
+package OOP_projects.Labs__2_4;
 
 
 public class LabWork__2_4_4 {
