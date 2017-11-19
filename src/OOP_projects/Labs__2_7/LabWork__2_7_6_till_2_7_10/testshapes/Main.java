@@ -3,12 +3,12 @@ package OOP_projects.Labs__2_7.LabWork__2_7_6_till_2_7_10.testshapes;
 public class Main {
     public static void main(String[] args) {
 
-        final int DIFFERENT_SHAPES = 3;
+        final int KINDS_OF_SHAPES= 3;
         double sumOfTotalArea = 0;
         double sumRectArea = 0;
         double sumTriangleArea = 0;
         double sumCircleArea = 0;
-        Shape[][] shapes = new Shape[DIFFERENT_SHAPES][];
+        Shape[][] shapes = new Shape[KINDS_OF_SHAPES][];
 
         shapes[0] = new Shape[5];   // Why without this line is NullPointerException ?
         shapes[0][0] = new Rectangle("RED", 11,22);
