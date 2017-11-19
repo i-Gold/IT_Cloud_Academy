@@ -4,6 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         final int DIFFERENT_SHAPES = 3;
+        double sumOfTotalArea = 0;
+        double sumRectArea = 0;
+        double sumTriangleArea = 0;
+        double sumCircleArea = 0;
         Shape[][] shapes = new Shape[DIFFERENT_SHAPES][];
 
         shapes[0] = new Shape[5];   // Why without this line is NullPointerException ?
@@ -26,5 +30,28 @@ public class Main {
             System.out.println("This is " + shape.toString() + "\n"
                     + "Shape area is: " + shape.calculateArea() + "\n");
         }
+
+        for (Shape[] shapeType : shapes) {
+            for (Shape shape : shapeType)
+            sumOfTotalArea += shape.calculateArea();
+        }
+        System.out.println("The TOTAL AREA of all figures together: " + sumOfTotalArea + "\n");
+
+        for (Shape[] shapeType : shapes) {
+            for (Shape shape : shapeType){
+                if (shape instanceof Rectangle) {
+                    sumRectArea += shape.calculateArea();
+                }
+                if (shape instanceof Triangle) {
+                    sumTriangleArea += shape.calculateArea();
+                }
+                if (shape instanceof Circle) {
+                    sumCircleArea += shape.calculateArea();
+                }
+            }
+        }
+        System.out.println("Rectangles total area: " + sumRectArea + "\n"
+                         + "Triangles total area: " + sumTriangleArea + "\n"
+                         + "Circles total area: " + sumCircleArea + "\n");
     }
 }
