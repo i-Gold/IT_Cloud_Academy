@@ -31,8 +31,8 @@ public class EthernetAdapter extends Device {
                 "manufacturer='" + super.getManufacturer() + '\'' +
                 ", price=" + super.getPrice() +
                 ", serialNumber='" + super.getSerialNumber() + '\'' +
-                "speed=" + getSpeed() +
-                ", mac='" + getMac() + '\'' +
+                "speed=" + speed +
+                ", mac='" + mac + '\'' +
                 '}';
     }
 

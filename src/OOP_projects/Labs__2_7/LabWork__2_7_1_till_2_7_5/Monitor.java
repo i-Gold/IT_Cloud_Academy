@@ -31,8 +31,8 @@ public class Monitor extends Device {
                 "manufacturer='" + super.getManufacturer() + '\'' +
                 ", price=" + super.getPrice() +
                 ", serialNumber='" + super.getSerialNumber() + '\'' +
-                "resolutionX=" + getResolutionX() +
-                ", resolutionY=" + getResolutionY() +
+                "resolutionX=" + resolutionX +
+                ", resolutionY=" + resolutionY +
                 '}';
     }
 
