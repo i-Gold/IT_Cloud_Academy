@@ -1,8 +1,8 @@
-package OOP_projects.Labs__2_7.LabWork__2_7_6_till_2_7_10.testshapes;
+package OOP_projects.Labs__2_8;
 
 import static java.lang.Math.sqrt;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Comparable{
 
     private double a;
     private double b;
@@ -48,5 +48,19 @@ public class Triangle extends Shape {
                 ", a = " + a +
                 ", b = " + b +
                 ", b = " + c;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("This is " + toString() + ", area is: " + calculateArea());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Triangle triangle = (Triangle) o;
+        if (this.calculateArea() < triangle.calculateArea()) return -1; {
+            if (this.calculateArea() > triangle.calculateArea()) return 1;
+            return 0;
+        }
     }
 }

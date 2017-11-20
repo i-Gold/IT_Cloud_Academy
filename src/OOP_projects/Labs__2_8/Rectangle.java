@@ -1,6 +1,6 @@
-package OOP_projects.Labs__2_7.LabWork__2_7_6_till_2_7_10.testshapes;
+package OOP_projects.Labs__2_8;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Comparable {
 
     private double width;
     private double height;
@@ -35,5 +35,19 @@ public class Rectangle extends Shape {
         return "Rectangle color is: " + super.getColor() +
                 ", width = " + width +
                 ", height = " + height;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("This is " + toString() + ", area is: " + calculateArea());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Rectangle rectangle = (Rectangle) o;
+        if (this.calculateArea() < rectangle.calculateArea()) return -1; {
+            if (this.calculateArea() > rectangle.calculateArea()) return 1;
+            return 0;
+        }
     }
 }
