@@ -9,7 +9,7 @@ public class Main {
         double sumTriangleArea = 0;
         double sumCircleArea = 0;
         Shape[][] shapes = new Shape[KINDS_OF_SHAPES][];
-
+        // а зачем тут вообще нужен двумерный массив?
         shapes[0] = new Shape[5];   // Why without this line is NullPointerException ?
         shapes[0][0] = new Rectangle("RED", 11,22);
         shapes[0][1] = new Rectangle("YELLOW", 10,21);
