@@ -1,5 +1,7 @@
 package OOP_projects.Labs__2_8;
 
+import java.util.Comparator;
+
 public class Circle extends Shape implements Comparable {
 
     private double radius;
