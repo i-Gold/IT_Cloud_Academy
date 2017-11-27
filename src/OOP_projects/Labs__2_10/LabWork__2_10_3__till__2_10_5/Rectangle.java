@@ -33,9 +33,9 @@ public class Rectangle extends Shape implements Comparable {
     }
 
     public static Rectangle parseRectangle(String rectangle) {
-        String[] rectangleArray = new String[]{rectangle};
+        String[] rectangleArray = new String[]{};
         StringTokenizer sk = new StringTokenizer(rectangle, ":,");
-        for (int i = 0; i < rectangle.length(); i++) {
+        for (int i = 0; i < rectangle.length() - 1; i++) {
             while (sk.hasMoreElements()) {
                 rectangleArray[i] = sk.nextElement().toString();
             }

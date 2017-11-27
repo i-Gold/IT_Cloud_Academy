@@ -45,9 +45,9 @@ public class Triangle extends Shape implements Comparable{
     }
 
     public static Triangle parseTriangle(String triangle) {
-        String[] triangleArray = new String[]{triangle};
+        String[] triangleArray = new String[]{};
         StringTokenizer sk = new StringTokenizer(triangle, ":,");
-        for (int i = 0; i < triangle.length(); i++) {
+        for (int i = 0; i < triangle.length() - 1; i++) {
             while (sk.hasMoreElements()) {
                 triangleArray[i] = sk.nextElement().toString();
             }

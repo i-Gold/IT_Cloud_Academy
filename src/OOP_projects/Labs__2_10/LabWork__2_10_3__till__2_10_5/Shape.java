@@ -20,11 +20,11 @@ public abstract class Shape implements Drawable {
     public abstract double calculateArea();
 
     public static Shape parseShape(String string) {
-        String[] shapeArray = new String[]{string};
+        String[] shapeArray = new String[]{};
         StringTokenizer sk = new StringTokenizer(string, ":,");
-        for (int i = 0; i < string.length(); i++) {
+        for (int i = 0; i < string.length() - 1; i++) {
             while (sk.hasMoreElements()) {
-               shapeArray[i] = sk.nextElement().toString();
+                shapeArray[i] = sk.nextElement().toString();
             }
         }
         switch (shapeArray[0]){

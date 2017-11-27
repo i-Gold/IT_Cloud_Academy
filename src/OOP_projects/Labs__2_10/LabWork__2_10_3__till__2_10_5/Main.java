@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // NullPointerException
+        // ArrayIndexOutOfBoundsException
 
         System.out.println(Shape.parseShape("Rectangle:RED:10,20").toString() + "\n"
                          + Shape.parseShape("Triangle:GREEN:9,7,12").toString() + "\n"
