@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: OOP_projects.Labs__2_6.lab__6_1__till__6_4.example.testpac
+ k.Main
+
