@@ -24,14 +24,8 @@ public class Circle extends Shape implements Comparable {
     }
 
     public static Circle parseCircle(String circle) {
-        String[] circleArray = new String[]{};
-        StringTokenizer sk = new StringTokenizer(circle, ":,");
-        for (int i = 0; i < circle.length() - 1; i++) {
-            while (sk.hasMoreElements()) {
-                circleArray[i] = sk.nextElement().toString();
-            }
-        }
-        return new Circle(circleArray[0], Double.parseDouble(circleArray[1]));
+        String[] circleArray = circle.split(":");
+        return new Circle(circleArray[1], Double.parseDouble(circleArray[2]));
     }
 
     @Override

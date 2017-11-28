@@ -1,9 +1,9 @@
 package oop.Labs__10.LabWork__2_10_3__till__2_10_5;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        // ArrayIndexOutOfBoundsException
 
         System.out.println(Shape.parseShape("Rectangle:RED:10,20").toString() + "\n"
                          + Shape.parseShape("Triangle:GREEN:9,7,12").toString() + "\n"
@@ -11,7 +11,7 @@ public class Main {
         System.out.println("******************************************");
 
 
-/*        System.out.print("How much shapes do u want?: ");
+        System.out.print("How much shapes do u want?: ");
         Scanner sc = new Scanner(System.in);
         final int SHAPES_LENGTH = Integer.parseInt(sc.nextLine());
         Shape[] shapes = new Shape[SHAPES_LENGTH];
@@ -22,6 +22,7 @@ public class Main {
         }
         for (Shape shape : shapes) {
             shape.draw();
-        }*/
+        }
+
     }
 }
