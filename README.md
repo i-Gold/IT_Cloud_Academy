@@ -1,1 +1,1 @@
-Stydying at the course «Programming on Java»
+Stydying at the course **«Programming on Java»**
